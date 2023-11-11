@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Input Types</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"],
+    input[type="range"],
+    input[type="date"],
+    input[type="time"],
+    input[type="month"],
+    input[type="week"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    input[type="color"] {
+      width: 50px;
+      height: 30px;
+      padding: 0;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="input-container">
+    <label for="number-input">Number Input:</label>
+    <input type="number" id="number-input" placeholder="Enter a number..." min="1" max="100" step="1">
+  </div>
+
+  <div class="input-container">
+    <label for="range-input">Range Input:</label>
+    <input type="range" id="range-input" min="0" max="100" step="1">
+  </div>
+
+  <div class="input-container">
+    <label for="color-input">Color Input:</label>
+    <input type="color" id="color-input">
+  </div>
+
+  <div class="input-container">
+    <label for="date-input">Date Input:</label>
+    <input type="date" id="date-input">
+  </div>
+
+  <div class="input-container">
+    <label for="file-input">File Input:</label>
+    <input type="file" id="file-input">
+  </div>
+
+  <div class="input-container">
+    <label for="time-input">Time Input:</label>
+    <input type="time" id="time-input">
+  </div>
+
+  <div class="input-container">
+    <label for="month-input">Month Input:</label>
+    <input type="month" id="month-input">
+  </div>
+
+  <div class="input-container">
+    <label for="week-input">Week Input:</label>
+    <input type="week" id="week-input">
+  </div>
+
+  <div class="input-container">
+    <label for="email-input">Email Input:</label>
+    <input type="email" id="email-input" placeholder="Enter your email...">
+  </div>
+</body>
+
+</html>

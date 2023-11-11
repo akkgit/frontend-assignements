@@ -1,0 +1,8 @@
+.bordered-table {
+    border: 2px solid black; /* Black border for the table */
+    border-collapse: collapse; /* Collapse border to avoid gaps between cells */
+}
+
+.bordered-table tr:hover {
+    background-color: lightgray; /* Background color on hover */
+}

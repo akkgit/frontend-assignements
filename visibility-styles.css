@@ -1,0 +1,37 @@
+.element {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.visible-style {
+    visibility: visible;
+}
+
+.hidden-style {
+    visibility: hidden;
+}
+
+.collapse-style {
+    visibility: collapse;
+}
+
+.none-display {
+    display: none;
+}
+
+.inline-display {
+    display: inline;
+}
+
+.block-display {
+    display: block;
+}
+
+.contents-display {
+    display: contents;
+}
+
+.list-item-display {
+    display: list-item;
+}

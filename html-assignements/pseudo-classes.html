@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Page with Pseudo-classes and Pseudo-elements</title>
+  <style>
+    /* Anchor pseudo-classes */
+    a:link {
+      color: blue; /* Unvisited link */
+    }
+
+    a:visited {
+      color: purple; /* Visited link */
+    }
+
+    a:hover {
+      text-decoration: underline; /* Mouse over link */
+    }
+
+    a:active {
+      color: red; /* Selected link */
+    }
+
+    /* List item pseudo-classes */
+    ul li:nth-child(odd) {
+      background-color: #f2f2f2; /* Style odd list items */
+    }
+
+    /* Paragraph pseudo-elements */
+    p::first-line {
+      font-weight: bold; /* Style the first line of paragraphs */
+    }
+
+    p::first-letter {
+      font-size: 150%; /* Style the first letter of paragraphs */
+      float: left;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="#heading-section">This is a Heading</a></h1>
+
+  <p>This is a paragraph of text. It can contain <i>italic</i> and <strong>bold</strong> text. You can also create
+    hyperlinks using the <a href="https://www.example.com">anchor</a> tag.</p>
+
+  <h2><a href="#unordered-list-section">Unordered List</a></h2>
+  <ul id="unordered-list-section">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <h2><a href="#ordered-list-section">Ordered List</a></h2>
+  <ol id="ordered-list-section">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+
+  <h2><a href="#label-section">Label</a></h2>
+  <label for="input-field">Input Field:</label>
+  <input type="text" id="input-field">
+
+  <h2><a href="#blockquote-section">Blockquote</a></h2>
+  <blockquote id="blockquote-section">
+    <p>This is a blockquote. It is used to indicate quoted or cited text from another source.</p>
+  </blockquote>
+
+  <h2><a href="#hr-section">Horizontal Rule</a></h2>
+  <hr id="hr-section">
+
+  <h2><a href="#image-section">Image</a></h2>
+  <img src="https://via.placeholder.com/150" alt="Placeholder Image" id="image-section">
+
+  <h2><a href="#div-span-section">Division and Span</a></h2>
+  <div id="div-span-section">This is a division.</div>
+  <span>This is a span.</span>
+</body>
+
+</html>

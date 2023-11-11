@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Elements Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+    }
+
+    article {
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Semantic Elements Example</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <article>
+    <h2>Latest Articles</h2>
+    <p>This is a sample article about semantic elements in HTML. Semantic elements provide meaning to the structure of a webpage, making it more accessible and understandable for both humans and machines.</p>
+  </article>
+
+  <article>
+    <h2>Employee List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>Software Engineer</td>
+          <td>Engineering</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>Marketing Specialist</td>
+          <td>Marketing</td>
+        </tr>
+        <tr>
+          <td>Bob Johnson</td>
+          <td>Accountant</td>
+          <td>Finance</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+
+  <footer>
+    <p>&copy; 2023 Semantic Elements Example. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

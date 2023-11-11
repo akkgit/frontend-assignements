@@ -1,0 +1,8 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 20px; /* Apply padding of 20px inside the border */
+    margin: 50px; /* Apply margin of 50px outside the border */
+}

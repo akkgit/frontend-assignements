@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Restrictions and Attributes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="input-container">
+    <label for="disabled-input">Disabled Input:</label>
+    <input type="text" id="disabled-input" placeholder="This input is disabled" disabled>
+  </div>
+
+  <div class="input-container">
+    <label for="max-input">Max Input:</label>
+    <input type="number" id="max-input" placeholder="Enter a number less than or equal to 50" max="50">
+  </div>
+
+  <div class="input-container">
+    <label for="maxlength-input">Maxlength Input:</label>
+    <input type="text" id="maxlength-input" placeholder="Maximum 10 characters" maxlength="10">
+  </div>
+
+  <div class="input-container">
+    <label for="min-input">Min Input:</label>
+    <input type="number" id="min-input" placeholder="Enter a number greater than or equal to 10" min="10">
+  </div>
+
+  <div class="input-container">
+    <label for="readonly-input">Readonly Input:</label>
+    <input type="text" id="readonly-input" placeholder="This input is readonly" readonly>
+  </div>
+
+  <div class="input-container">
+    <label for="required-input">Required Input:</label>
+    <input type="text" id="required-input" placeholder="This input is required" required>
+  </div>
+
+  <div class="input-container">
+    <label for="size-input">Size Input:</label>
+    <input type="text" id="size-input" placeholder="Size 20 characters" size="20">
+  </div>
+
+  <div class="input-container">
+    <label for="value-input">Value Input:</label>
+    <input type="text" id="value-input" value="Default Value">
+  </div>
+</body>
+
+</html>

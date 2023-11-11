@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe and Marquee Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    #iframe-container {
+      margin-bottom: 20px;
+    }
+
+    #marquee-container {
+      overflow: hidden;
+    }
+
+    #marquee-text {
+      width: 100%;
+      animation: marqueeAnimation 10s linear infinite;
+    }
+
+    @keyframes marqueeAnimation {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Iframe and Marquee Example</h1>
+
+  <div id="iframe-container">
+    <h2>Inline Frame (Iframe)</h2>
+    <iframe src="https://www.example.com" width="600" height="400" title="Example Website"></iframe>
+  </div>
+
+  <div id="marquee-container">
+    <h2>Marquee</h2>
+    <marquee id="marquee-text" behavior="scroll" direction="left">
+      This is a scrolling marquee text. It's deprecated in HTML5 and should be avoided in modern web development.
+    </marquee>
+  </div>
+</body>
+
+</html>
