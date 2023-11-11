@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits Sorting</title>
+</head>
+
+<body>
+  <h1>Fruits Sorting</h1>
+
+  <p>Click the button to sort the fruits in descending order:</p>
+
+  <button onclick="sortFruits()">Sort Fruits</button>
+
+  <script>
+    function sortFruits() {
+      // Array of fruit names
+      var fruits = ["Apple", "Banana", "Orange", "Grapes", "Pineapple"];
+
+      // Sort the array in descending order
+      fruits.sort(function (a, b) {
+        return b.localeCompare(a);
+      });
+
+      // Display the sorted array in the console
+      console.log("Sorted Fruits (Descending Order):", fruits);
+    }
+
+    // Object representing information about a person
+    var person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      occupation: "Developer"
+    };
+
+    // Iterate over the properties of the person object using a for...in loop
+    for (var key in person) {
+      if (person.hasOwnProperty(key)) {
+        console.log(key + ": " + person[key]);
+      }
+    }
+    
+    var person = {
+      firstName: "John",
+      lastName: "Doe"
+    };
+
+    // Access properties using dot notation
+    console.log("Using Dot Notation:");
+    console.log("First Name: " + person.firstName);
+    console.log("Last Name: " + person.lastName);
+
+    // Access properties using square bracket notation
+    console.log("\nUsing Square Bracket Notation:");
+    console.log("First Name: " + person["firstName"]);
+    console.log("Last Name: " + person["lastName"]);
+
+     // Initialization first, then declaration
+     console.log("Before hoisting:");
+    console.log("Name:", name); // Output: undefined
+
+    // Variable declaration
+    var name;
+
+    // Variable initialization
+    name = "John";
+
+    console.log("\nAfter hoisting:");
+    console.log("Name:", name); // Output: John
+    
+  </script>
+</body>
+
+</html>

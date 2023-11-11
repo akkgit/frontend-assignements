@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disappear Button Example</title>
+  <style>
+    /* Add some styling for demonstration purposes */
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Disappear Button Example</h1>
+
+  <button onclick="makeDisappear(this)">Click Me</button>
+
+  <script>
+    function makeDisappear(button) {
+      // Use the "this" keyword to refer to the clicked button
+      button.style.display = "none";
+    }
+
+    function greet(name, greeting) {
+        console.log(greeting + ", " + name + "!");
+    }
+
+    // Using call()
+    greet.call(null, "John", "Hello");
+    // Using apply()
+    greet.apply(null, ["Jane", "Hi"]);
+    
+  </script>
+</body>
+
+</html>

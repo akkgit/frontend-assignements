@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Object Example</title>
+</head>
+
+<body>
+  <h1>Console Example</h1>
+  <script>
+//displaying
+let x = 10;
+let y = 20;
+console.log("x:", x);
+console.log("y:", y);
+
+let sum = x + y;
+console.log("Sum:", sum);
+
+//checking floe
+function myFunction() {
+    console.log("Entering myFunction");
+  
+    // Code logic
+  
+    console.log("Exiting myFunction");
+  }
+  
+  myFunction();
+
+//debugging condition
+let isDebugMode = true;
+
+if (isDebugMode) {
+  console.log("Debug mode is enabled");
+  // Additional debugging information
+}
+
+// Rest of the code
+
+//logging objects
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+  };
+  
+console.log("Person:", person);
+
+//Grouping log output
+console.group("Operation Details");
+
+console.log("Step 1");
+console.log("Step 2");
+console.log("Step 3");
+
+console.groupEnd();
+
+//Timing operations
+console.time("Timer");
+// Code to be timed
+console.timeEnd("Timer");
+
+//styling console outpur
+console.log("%cStyled Message", "color: blue; font-size: 16px;");
+
+//logging errors
+console.error("An error occurred!");
+
+//clearing the console
+  //console.clear();
+</script>
+</body>
+</html>

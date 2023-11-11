@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Object Example</title>
+</head>
+
+<body>
+  <h1>JSON Object Example</h1>
+
+  <script>
+    // Creating a JSON object
+    var person = {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 30,
+      "address": {
+        "city": "New York",
+        "zipCode": "10001"
+      }
+    };
+
+    // Accessing properties using dot notation
+    console.log("First Name:", person.firstName);
+    console.log("Last Name:", person.lastName);
+    console.log("Age:", person.age);
+    console.log("City:", person.address.city);
+    console.log("Zip Code:", person.address.zipCode);
+  </script>
+</body>
+
+</html>

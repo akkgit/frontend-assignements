@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Date and Time Example</title>
+</head>
+
+<body>
+  <h1>Show Date and Time Example</h1>
+
+  <button id="dateTimeButton">Click Me</button>
+
+  <script>
+    // Function to display current date and time
+    function showDateTime() {
+      var currentDate = new Date();
+      var formattedDateTime = currentDate.toLocaleString();
+
+      alert("Current Date and Time: " + formattedDateTime);
+    }
+
+    // Add event listener to the button
+    var button = document.getElementById("dateTimeButton");
+    button.addEventListener("click", showDateTime);
+  </script>
+</body>
+
+</html>
